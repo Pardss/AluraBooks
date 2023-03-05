@@ -1,0 +1,115 @@
+.carrossel__titulo{
+    background-color: var(--branco);
+    color: var(--amarelo);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 3.3em 0 2.15em 0;
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+div .swiper-pagination{
+    position: initial;
+    padding: 0.5em 0;
+}
+
+.card__conteiner{
+    display: flex;
+    padding: 15px;
+    margin: 24px;
+    background: var(--branco);
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__titulo{
+    font-size: 16px;
+    color: var(--amarelo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+.card__texto{
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    color: var(--azul);
+    padding: 10px 0;
+}
+.card__texto2{
+    font-size: 14px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+}
+.card__esquerda__baixo{
+    display: flex;
+}
+.card__img{
+    padding: 25px 15px 15px 15px;
+}
+.card__img:hover{
+    cursor: pointer;
+}
+.card__botao{
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background: var(--amarelo);
+    border: none;
+    color: var(--branco);
+    width: 100%;
+    font-family: var(--fonte-principal);
+    transition: 0.2s;
+}
+.card__botao:hover{
+    cursor: pointer;
+    color: var(--azul);
+    transition: 0.2s;
+}
+.card__direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estrela{
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 26px; 
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .card__conteiner{
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+@media screen and (min-width: 1728px){
+    .carrossel__card{
+        display: flex;
+        margin:0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+    .card__conteiner{
+        margin-left: 30px;
+        width: 60%;
+    }
+    .card__titulo{
+        font-size: 32px;
+    }
+    .card__texto2{
+        font-size: 16px;
+    }
+}
